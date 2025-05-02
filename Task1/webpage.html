@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="webpage.css">
+    <title>Travel</title>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp"> 
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="logo.jpg" alt="logo">Travel</div>
+            <li> <a href="#home"> Home</a> </li>
+            <li> <a href="#about"> About</a> </li>
+            <li> <a href="#services"> Services</a> </li>
+            <li> <a href="#contact"> Contact </a> </li>
+           
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Tour your Dream destination with Travel</p>
+                <p class="text-small">Tourism is like taking a fun trip to see new places.
+                     People travel to visit mountains, beaches, and famous buildings. They learn about different foods, music, 
+                     and games from around the world. </p>
+                <div class="button">
+                    <button class="btn">Explore More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="social_icons">
+           <a href="http://facebook.com" target="_blank"><i class="fab fa-brands fa-facebook"></i></a>
+           <a href="http://twitter.com" target="_blank"><i class="fab fa-brands fa-twitter"></i></a>
+           <a href="http://instagram.com" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
+            <a href="http://telegram.com" target="_blank"><i class="fab fa-brands fa-telegram"></i></a> 
+        </div>
+    </section>
+    <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ 
+      <footer class="background" >
+
+        <p class="text-footer"> Copyright &copy; 2027 www.Travel.com - All rights reserved </p> 
+    </footer> 
+    
+    <script>
+        burger = document.querySelector('.burger')
+navbar = document.querySelector('.navbar')
+navList = document.querySelector('.nav-list')
+
+
+burger.addEventListener('click', ()=>{
+  navList.classList.toggle('v-class-resp');
+  navbar.classList.toggle('h-nav-resp');
+  })
+    </script>
+</body>
+</html>
